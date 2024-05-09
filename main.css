@@ -1,0 +1,85 @@
+
+body {
+    background-color: #000000;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-buttons {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    padding: 10px;
+    width: fit-content;
+}
+
+button {
+    background-color: #a5a5a5;
+    color: #FFFFFF;
+    border-color: #a5a5a5;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border-width: 0px;
+    font-size: 25px;
+}
+
+.btn-row-first {
+    color: #000000;
+}
+
+.btn-last, .btn-equal {
+    background-color: #ff9f0a;
+}
+
+.btn-last:focus {
+    background-color: #FFFFFF;
+    color: #ff9f0a;
+    background-size: 100%;
+}
+
+.btn-number {
+    background-color: #333333;
+}
+
+.ripple {
+    background-position: center;
+    transition: background 0.8s;
+}
+.ripple:hover {
+    background: #a5a5a5 radial-gradient(circle, transparent 1%, #a5a5a5 1%) center/15000%;
+}
+.ripple:active {
+    background-color: #d9d9d9;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+.btn-zero {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-radius: 30px;
+    width: 100%;
+    text-align: left;
+    padding-left: 25px;
+}
+
+.input-calc {
+    width: 260px;
+    text-align: end;
+    font-size: 45px;
+    padding-top: 45px;
+    background: #000000;
+    color: #FFFFFF;
+    border-style: none;
+    font-weight: 200;
+}
+
+::-webkit-input-placeholder {
+    color: #FFFFFF;
+}
