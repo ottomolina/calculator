@@ -72,12 +72,9 @@ function percent() {
 }
 
 function cleanInput() {
-    if (input.value != '') {
-        input.value = '';
-    } else {
-        aux = 0;
-        operation = '';
-    }
+    input.value = '';
+    aux = 0;
+    operation = '';
 }
 
 const listButton = document.getElementsByClassName('ripple');
